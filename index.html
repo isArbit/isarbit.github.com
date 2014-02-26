@@ -9,7 +9,8 @@
   <meta name="author" content="Arbit Chen">
 
   
-  <meta name="description" content="Blog Archives Recent Posts GitHub Repos Status updating&#8230; @isarbit on GitHub $(document).ready(function(){ if (!window.jXHR){ var jxhr = &hellip;">
+  <meta name="description" content="When I was deploying this blog and trying to preview with command: 1
+$ rake prview I found out that safari shows a blank page for me with the default &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,61 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/26/rake-preview-shows-a-blank-page-in-safari-7/">Rake Preview Shows a Blank Page in Safari 7</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-26T10:10:52+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When I was deploying this blog and trying to preview with command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake prview</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I found out that safari shows a blank page for me with the default URL:<code><a href="http://localhost:4000">http://localhost:4000</a></code>.</p>
+
+<p>That&rsquo;s pretty strange actually. After googling for a minute, I found a solution
+in <a href="https://github.com/imathis/octopress/issues/1395">here</a>.
+<a href="https://github.com/chengyanlai">@chengyanlai</a> gives an solution taht install
+<code>thin</code> to gem file could make it work. The following commands are:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ echo gem \"thin\" &gt;&gt; Gemfile
+</span><span class='line'>$ bundle install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After installation, everything works!</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -77,6 +133,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/02/26/rake-preview-shows-a-blank-page-in-safari-7/">Rake Preview Shows a Blank Page in Safari 7</a>
+      </li>
     
   </ul>
 </section>

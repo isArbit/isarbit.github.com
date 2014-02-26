@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Arbit's Programming Blog.]]></title>
-  <link href="http://isArbit.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Shell | Arbit's Programming Blog.]]></title>
+  <link href="http://isArbit.github.io/blog/categories/shell/atom.xml" rel="self"/>
   <link href="http://isArbit.github.io/"/>
   <updated>2014-02-26T14:06:47+08:00</updated>
   <id>http://isArbit.github.io/</id>
@@ -20,9 +20,9 @@
     <id>http://isArbit.github.io/blog/2014/02/26/rake-preview-shows-a-blank-page-in-safari-7</id>
     <content type="html"><![CDATA[<p>When I was deploying this blog and trying to preview with command:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake prview</span></code></pre></td></tr></table></div></figure>
-
+<p><code>
+$ rake prview
+</code></p>
 
 <p>I found out that safari shows a blank page for me with the default URL:<code><a href="http://localhost:4000">http://localhost:4000</a></code>.</p>
 
@@ -31,11 +31,10 @@ in <a href="https://github.com/imathis/octopress/issues/1395">here</a>.
 <a href="https://github.com/chengyanlai">@chengyanlai</a> gives an solution taht install
 <code>thin</code> to gem file could make it work. The following commands are:</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ echo gem \"thin\" &gt;&gt; Gemfile
-</span><span class='line'>$ bundle install</span></code></pre></td></tr></table></div></figure>
-
+<p><code>
+$ echo gem \"thin\" &gt;&gt; Gemfile
+$ bundle install
+</code></p>
 
 <p>After installation, everything works!</p>
 ]]></content>
